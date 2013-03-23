@@ -3,8 +3,11 @@
   (:require [compojure.handler :as handler]
             [compojure.route :as route]))
 
+(defn root []
+  "Root says: Hello World!")
+
 (defroutes app-routes
-  (GET "/" [] "Hello World")
+  (GET "/" [] (root))
   (route/not-found "Not Found"))
 
 (def app
