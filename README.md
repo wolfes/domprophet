@@ -1,4 +1,4 @@
-# dom-prophet
+# domprophet
 
 FIXME
 
